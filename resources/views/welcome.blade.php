@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             overlay.innerHTML = '';
             const clonedCard = card.cloneNode(true);
+            clonedCard.classList.add('zoomed-card');
             overlay.appendChild(clonedCard);
 
             clonedCard.style.transform = 'rotateY(0deg) scale(0.2)';
@@ -30,15 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
             setTimeout(() => {
                 clonedCard.style.transform = 'rotateY(180deg) scale(1)';
-            }, 100); 
+            }, 100);
 
-            overlay.addEventListener('click', () => {
-                clonedCard.style.transform = 'rotateY(0deg) scale(0.2)'; 
-                overlay.classList.remove('active');
+            overlay.addEventListener('click', (event) => {
+                if (event.target === overlay) {
+                    clonedCard.style.transform = 'rotateY(0deg) scale(0.2)';
+                    overlay.classList.remove('active');
 
-                setTimeout(() => {
-                    overlay.innerHTML = '';
-                }, 600); 
+                    setTimeout(() => {
+                        overlay.innerHTML = ''; 
+                    }, 600);
+                }
             });
         });
     });

@@ -16,75 +16,79 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <style>
-/* Card Flip and Zoom Effect */
-.card-container {
-    perspective: 1000px;
-    cursor: pointer;
-}
+        /* Card Flip and Zoom Effect */
+        .card-container {
+            perspective: 1000px;
+            cursor: pointer;
+        }
 
-.card {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    transition: transform 0.6s, box-shadow 0.3s;
-    transform-style: preserve-3d;
-    transform-origin: center;
-}
+        .card-2 {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            transition: transform 0.6s, box-shadow 0.3s;
+            transform-style: preserve-3d;
+            transform-origin: center;
+        }
 
-.card.flipped {
-    transform: rotateY(180deg);
-}
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
 
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
+        .card-front,
+        .card-back {
+            /* position: absolute;
+            width: 100%;
+            height: 100%; */
+            backface-visibility: hidden;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 1.5rem;
+        }
 
-.card-back {
-    transform: rotateY(180deg);
-    background-color: #f8f9fa; /* Back side color */
-    border: 1px solid #ddd;
-}
+        .card-back {
+            transform: rotateY(180deg);
+            background-color: #f8f9fa; /* Back side color */
+            /* border: 1px solid #ddd; */
+        }
 
-/* Lightbox Effect */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with reduced opacity */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9998;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
+        /* Lightbox Effect */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7); /* Black background with reduced opacity */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
 
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
-.overlay .card {
-    position: absolute;
-    width: 80vw; /* Adjust to fit the screen width */
-    height: 90vh; /* Adjust to fit the screen height */
-    transform: rotateY(180deg) scale(1);
-    transition: transform 0.6s ease-in-out;
-    z-index: 9999;
-    cursor: pointer;
-}
+        .overlay .card-2 {
+            position: absolute;
+            width: 80vw; /* Adjust to fit the screen width */
+            height: 90vh; /* Adjust to fit the screen height */
+            transform: rotateY(180deg) scale(1);
+            transition: transform 0.6s ease-in-out;
+            z-index: 9999;
+            cursor: pointer;
+        }
 
+        .org-img{
+            width:10%;
+            height:10%;
+        }
     </style>
 </head>
 <body>
