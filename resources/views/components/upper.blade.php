@@ -9,7 +9,7 @@
                 <div class="card-front">
                     <div class="card-body">
                         <div class="card-title">
-                            {{ $card }}
+                            {{ $card === 'G2' ? substr($card, 0, 1) : $card }}
                         </div>
                     </div>
                 </div>

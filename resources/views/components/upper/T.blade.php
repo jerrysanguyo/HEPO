@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <img src="{{ asset('images/Picture1.webp') }}" alt="" class="img-thumbnail border-0">
+            <img src="{{ asset('images/hepo/Picture1.webp') }}" alt="" class="img-thumbnail border-0">
         </div>
     </div>
     <div class="row">
@@ -20,7 +20,7 @@
             </span>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12">
-            <img src="{{ asset('images/geographic.webp') }}" alt="" class="img-thumbnail border-0">
+            <img src="{{ asset('images/hepo/geographic.webp') }}" alt="" class="img-thumbnail border-0">
         </div>
     </div>
 </div>

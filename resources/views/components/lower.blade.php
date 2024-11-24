@@ -5,7 +5,7 @@
     @foreach($cardsLower as $lower)
     <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card-container">
-            <div class="card border-0 shadow">
+            <div class="card card-2 border-0 shadow">
                 <div class="card-front">
                     <div class="card-body">
                         <div class="card-title">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-back">
+                <div class="card-back overflow-auto">
                     <div class="card-body">
                         <div class="card-title">
                             {{ $lower }} Back

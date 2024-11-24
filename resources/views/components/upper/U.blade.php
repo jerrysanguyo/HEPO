@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <img src="{{ asset('images/Picture1.webp') }}" alt="" class="img-thumbnail border-0">
+            <img src="{{ asset('images/hepo/Picture1.webp') }}" alt="" class="img-thumbnail border-0">
         </div>
     </div>
     <div class="row">
@@ -12,16 +12,16 @@
         <div class="col-lg-3 col-md-12 col-sm-12 ">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img src="{{ asset('images/hpp1.webp') }}" alt="" class="image-fluid">
+                    <img src="{{ asset('images/hepo/hpp1.webp') }}" alt="" class="image-fluid">
                 </div>
                 <div class="mt-3 col-lg-12 col-md-12 col-sm-12">
-                    <img src="{{ asset('images/hpp2.webp') }}" alt="" class="image-fluid">
+                    <img src="{{ asset('images/hepo/hpp2.webp') }}" alt="" class="image-fluid">
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <img src="{{ asset('images/hpp3.webp') }}" alt="" class="image-fluid">
+                <img src="{{ asset('images/hepo/hpp3.webp') }}" alt="" class="image-fluid">
             </div>
         </div>
         <div class="col-lg-6 col-md-9 col-sm-12">
