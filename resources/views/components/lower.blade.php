@@ -16,7 +16,7 @@
                 <div class="card-back overflow-auto">
                     <div class="card-body">
                         <div class="card-title">
-                            {{ $lower }} Back
+                            @include('components.lower.' . $lower)
                         </div>
                     </div>
                 </div>

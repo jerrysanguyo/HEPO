@@ -35,22 +35,28 @@
             transform: rotateY(180deg);
         }
 
+        .card-front {
+            display: flex;
+        }
+
         .card-front,
         .card-back {
-            /* position: absolute;
+            position: absolute;
             width: 100%;
-            height: 100%; */
+            height: 100%;
             backface-visibility: hidden;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
             font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .card-back {
-            transform: rotateY(180deg);
             background-color: #f8f9fa; /* Back side color */
-            /* border: 1px solid #ddd; */
+            transform: rotateY(180deg); /* Start flipped */
+            z-index: 1; /* Behind card-front */
+            transition: transform 0.6s ease; /* Smooth flip transition */
         }
 
         /* Lightbox Effect */
